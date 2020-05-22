@@ -775,4 +775,37 @@ LNode *findCommonNode(LinkList &left, LinkList &right) {
     return p;
 }
 
+/**
+ * 问题描述
+ *    删除单链表数值重复出现的节点，仅保留第一次出现的节点
+ *
+ * 算法实现
+ *    空间换时间，使用辅助数组记录绝对值下标的值，0表示未出现，1表示出现过，则删除当前节点
+ *
+ * 算法总结
+ *    时间复杂度为O(n)，空间复杂的为O(1)
+ *
+ * @param list
+ */
+LinkList deleteNodeWithSameAbsData(LinkList &list, int max) {
+    int num[max+1];
+    for (int i = 0; i <= max; i++) {
+        num[i] = 0;
+    }
+    LNode *p = list->next, *pre = list, *temp;
+    while (p != nullptr) {
+        if(num[abs(p->data)] == 0) {
+            num[abs(p->data)] = 1;
+            p = p->next;
+            pre = pre->next;
+        } else {
+            temp = p;
+            pre->next = p->next;
+            p = p->next;
+            free(temp);
+        }
+    }
+    return list;
+}
+
 #endif //DEMO_SINGLECHAINLINE_H

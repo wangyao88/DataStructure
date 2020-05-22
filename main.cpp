@@ -4,15 +4,10 @@
 using namespace std;
 
 int main() {
-    LinkList left;
-    tailInsert(left);
-    print(left);
-
-    LinkList right;
-    tailInsert(right);
-    print(right);
-
-    LNode *commonNode = findCommonNode(left, right);
-    print(commonNode);
+    LinkList list;
+    tailInsert(list);
+    print(list);
+    deleteNodeWithSameAbsData(list, 100);
+    print(list);
     return 0;
 }
