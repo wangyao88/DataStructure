@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/localadmin/workspace/c++/demo/1_lineList/cycleDouble/CycleDoubleChainLine.cpp
+cstdlib
+-
+iostream
+-
+CycleDoubleChainLine.h
+/Users/localadmin/workspace/c++/demo/1_lineList/cycleDouble/CycleDoubleChainLine.h
+
+/Users/localadmin/workspace/c++/demo/1_lineList/cycleDouble/CycleDoubleChainLine.h
+
+/Users/localadmin/workspace/c++/demo/main.cpp
+1_lineList/cycleDouble/CycleDoubleChainLine.h
+/Users/localadmin/workspace/c++/demo/1_lineList/cycleDouble/CycleDoubleChainLine.h
+iostream
+-
+
