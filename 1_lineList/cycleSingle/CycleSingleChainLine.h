@@ -14,7 +14,7 @@ typedef struct SNode {
  * @param data
  * @return
  */
-SNode *createNode(Element data);
+SNode *createSNode(Element data);
 
 /**
  * 初始化循环单链表
@@ -37,16 +37,9 @@ bool isEmpty(SLinkList &list);
 /**
  * 循环单链表尾插法
  * @param list
- * @param data
  * @return 循环单链表
  */
-SLinkList tailInsert(SLinkList &list, Element data);
-
-/**
- * 循环单链表尾删法
- * @param list
- */
-void tailDelete(SLinkList &list);
+SLinkList tailInsert(SLinkList &list);
 
 /**
  * 循环单链表头插法
@@ -71,20 +64,6 @@ void headDelete(SLinkList &list);
 SNode *finSNode(SLinkList &list, Element data);
 
 /**
- * 在指定位置插入节点
- * @param index
- * @param data
- */
-bool insertNode(SNode *index, Element data);
-
-/**
- * 删除指定节点
- * @param index
- * @return
- */
-bool deleteNode(SNode *index);
-
-/**
  * 从头节点开始依次输出节点数值
  * @param list
  */
@@ -92,5 +71,36 @@ void printSLinkList(SLinkList list);
 
 //****************************基本操作结束******************************
 
+/**
+ * 问题描述
+ *    将循环单链表right链接到left之后，仍然保持链接形式
+ *
+ * 算法实现
+ *    先找到两个循环单链表的尾指针，将left的尾指针与right的第一个节点链接起来，
+ * 将right得的尾结点与left的头节点链接起来
+ *
+ * 算法总结
+ *    时间复杂度为O(m+n)，空间复杂的为O(1)
+ *
+ * @param left
+ * @param right
+ * @return
+ */
+SLinkList concatSLinkList(SLinkList &left, SLinkList &right);
+
+/**
+ * 问题描述
+ *    按升序顺序删除循环单链表
+ *
+ * 算法实现
+ *    每循环一次，查找一个最小值节点（由minP指向最小值节点，minPre指向其前驱节点）并删除它。
+ * 最后释放头节点
+ *
+ * 算法总结
+ *    时间复杂度为O()，空间复杂的为O(1)
+ *
+ * @param list
+ */
+void iteratorDeleteMin(SLinkList &list);
 
 #endif //DEMO_CYCLESINGLECHAINLINE_H

@@ -150,6 +150,33 @@ demo/fast:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/1_lineList/cycleDouble/CycleDoubleChainLine.cpp.s
 .PHONY : 1_lineList/cycleDouble/CycleDoubleChainLine.cpp.s
 
+1_lineList/cycleSingle/CycleSingleChainLine.o: 1_lineList/cycleSingle/CycleSingleChainLine.cpp.o
+
+.PHONY : 1_lineList/cycleSingle/CycleSingleChainLine.o
+
+# target to build an object file
+1_lineList/cycleSingle/CycleSingleChainLine.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/1_lineList/cycleSingle/CycleSingleChainLine.cpp.o
+.PHONY : 1_lineList/cycleSingle/CycleSingleChainLine.cpp.o
+
+1_lineList/cycleSingle/CycleSingleChainLine.i: 1_lineList/cycleSingle/CycleSingleChainLine.cpp.i
+
+.PHONY : 1_lineList/cycleSingle/CycleSingleChainLine.i
+
+# target to preprocess a source file
+1_lineList/cycleSingle/CycleSingleChainLine.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/1_lineList/cycleSingle/CycleSingleChainLine.cpp.i
+.PHONY : 1_lineList/cycleSingle/CycleSingleChainLine.cpp.i
+
+1_lineList/cycleSingle/CycleSingleChainLine.s: 1_lineList/cycleSingle/CycleSingleChainLine.cpp.s
+
+.PHONY : 1_lineList/cycleSingle/CycleSingleChainLine.s
+
+# target to generate assembly for a file
+1_lineList/cycleSingle/CycleSingleChainLine.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/1_lineList/cycleSingle/CycleSingleChainLine.cpp.s
+.PHONY : 1_lineList/cycleSingle/CycleSingleChainLine.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -189,6 +216,9 @@ help:
 	@echo "... 1_lineList/cycleDouble/CycleDoubleChainLine.o"
 	@echo "... 1_lineList/cycleDouble/CycleDoubleChainLine.i"
 	@echo "... 1_lineList/cycleDouble/CycleDoubleChainLine.s"
+	@echo "... 1_lineList/cycleSingle/CycleSingleChainLine.o"
+	@echo "... 1_lineList/cycleSingle/CycleSingleChainLine.i"
+	@echo "... 1_lineList/cycleSingle/CycleSingleChainLine.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

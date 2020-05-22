@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/Users/localadmin/workspace/c++/demo/1_lineList/cycleDouble/CycleDoubleChainLine.cpp
+/Users/localadmin/workspace/c++/demo/1_lineList/cycleSingle/CycleSingleChainLine.cpp
 cstdlib
 -
 iostream
 -
-CycleDoubleChainLine.h
-/Users/localadmin/workspace/c++/demo/1_lineList/cycleDouble/CycleDoubleChainLine.h
+CycleSingleChainLine.h
+/Users/localadmin/workspace/c++/demo/1_lineList/cycleSingle/CycleSingleChainLine.h
 
-/Users/localadmin/workspace/c++/demo/1_lineList/cycleDouble/CycleDoubleChainLine.h
+/Users/localadmin/workspace/c++/demo/1_lineList/cycleSingle/CycleSingleChainLine.h
 
 /Users/localadmin/workspace/c++/demo/main.cpp
-1_lineList/cycleDouble/CycleDoubleChainLine.h
-/Users/localadmin/workspace/c++/demo/1_lineList/cycleDouble/CycleDoubleChainLine.h
+1_lineList/cycleSingle/CycleSingleChainLine.h
+/Users/localadmin/workspace/c++/demo/1_lineList/cycleSingle/CycleSingleChainLine.h
 iostream
 -
 

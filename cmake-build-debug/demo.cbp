@@ -88,6 +88,9 @@
 		<Unit filename="/Users/localadmin/workspace/c++/demo/1_lineList/cycleDouble/CycleDoubleChainLine.h">
 			<Option target="demo"/>
 		</Unit>
+		<Unit filename="/Users/localadmin/workspace/c++/demo/1_lineList/cycleSingle/CycleSingleChainLine.cpp">
+			<Option target="demo"/>
+		</Unit>
 		<Unit filename="/Users/localadmin/workspace/c++/demo/1_lineList/cycleSingle/CycleSingleChainLine.h">
 			<Option target="demo"/>
 		</Unit>
