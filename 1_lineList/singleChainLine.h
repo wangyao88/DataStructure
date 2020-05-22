@@ -125,6 +125,21 @@ int length(LinkList &list) {
 }
 
 /**
+ * 输出单链表的所有元素
+ *
+ * @param list
+ */
+void print(LinkList list) {
+    if (list == nullptr) {
+        return;
+    }
+    for (LNode *p = list->next; p; p = p->next) {
+        cout << p->data << " ";
+    }
+    cout << endl;
+}
+
+/**
  * 递归删除元素值等于给定值的节点
  * @param list
  * @param element
@@ -696,18 +711,68 @@ bool pattern(LinkList &left, LinkList &right) {
 }
 
 /**
- * 输出单链表的所有元素
+ * 问题描述
+ *    查找单链表倒数第k个位置上的节点
+ *
+ * 算法实现
+ *    指针p,q都指向头节点， 让p先移动k个位置，然后p和q一起往后移动。
+ * 如果p能够移动k个位置，则查找成功。算法思想类似时间滑动窗口
+ *
+ * 算法总结
+ *    时间复杂度为O(n)，空间复杂的为O(1)
  *
  * @param list
+ * @param k
+ * @return
  */
-void print(LinkList list) {
-    if (list == nullptr) {
-        return;
+bool searchK(LinkList &list, int k) {
+    LNode *p = list->next, *q = list->next;
+    int count = 0;
+    while (p != nullptr) {
+        if(count < k) {
+            count++;
+        } else {
+            q = q->next;
+        }
+        p = p->next;
     }
-    for (LNode *p = list->next; p; p = p->next) {
-        cout << p->data << " ";
+    if(count < k) {
+        return false;
     }
-    cout << endl;
+    printf("%d", q->data);
+    return true;
+}
+
+/**
+ * 问题描述
+ *    查找两个单链表共链
+ *
+ * 算法实现
+ *    用指针p，q分别扫描left和right，当两个指针指向同一个节点时，即找到了共链
+ *
+ * 算法总结
+ *    时间复杂度为O(m+n)，空间复杂的为O(1)
+ *
+ * @param left
+ * @param right
+ * @return
+ */
+LNode *findCommonNode(LinkList &left, LinkList &right) {
+    LNode *p, *q;
+    int m = length(left);
+    int n = length(right);
+    for(p = left; m > n; m--) {
+        p = p->next;
+    }
+    for(q = right; m < n; n--) {
+        q = q->next;
+    }
+    while (p->next != nullptr && p->next->data != q->next->data) {
+//        p->next != q->next 此应为第二个条件，简便起见比较数值
+        p = p->next;
+        q = q->next;
+    }
+    return p;
 }
 
 #endif //DEMO_SINGLECHAINLINE_H
