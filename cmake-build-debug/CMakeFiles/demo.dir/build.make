@@ -96,11 +96,53 @@ CMakeFiles/demo.dir/1_lineList/cycleSingle/CycleSingleChainLine.cpp.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/1_lineList/cycleSingle/CycleSingleChainLine.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/localadmin/workspace/c++/demo/1_lineList/cycleSingle/CycleSingleChainLine.cpp -o CMakeFiles/demo.dir/1_lineList/cycleSingle/CycleSingleChainLine.cpp.s
 
+CMakeFiles/demo.dir/2_stack/SequentialStack.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/2_stack/SequentialStack.cpp.o: ../2_stack/SequentialStack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/localadmin/workspace/c++/demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/demo.dir/2_stack/SequentialStack.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/2_stack/SequentialStack.cpp.o -c /Users/localadmin/workspace/c++/demo/2_stack/SequentialStack.cpp
+
+CMakeFiles/demo.dir/2_stack/SequentialStack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/2_stack/SequentialStack.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/localadmin/workspace/c++/demo/2_stack/SequentialStack.cpp > CMakeFiles/demo.dir/2_stack/SequentialStack.cpp.i
+
+CMakeFiles/demo.dir/2_stack/SequentialStack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/2_stack/SequentialStack.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/localadmin/workspace/c++/demo/2_stack/SequentialStack.cpp -o CMakeFiles/demo.dir/2_stack/SequentialStack.cpp.s
+
+CMakeFiles/demo.dir/3_queue/CycleQueue.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/3_queue/CycleQueue.cpp.o: ../3_queue/CycleQueue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/localadmin/workspace/c++/demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/demo.dir/3_queue/CycleQueue.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/3_queue/CycleQueue.cpp.o -c /Users/localadmin/workspace/c++/demo/3_queue/CycleQueue.cpp
+
+CMakeFiles/demo.dir/3_queue/CycleQueue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/3_queue/CycleQueue.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/localadmin/workspace/c++/demo/3_queue/CycleQueue.cpp > CMakeFiles/demo.dir/3_queue/CycleQueue.cpp.i
+
+CMakeFiles/demo.dir/3_queue/CycleQueue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/3_queue/CycleQueue.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/localadmin/workspace/c++/demo/3_queue/CycleQueue.cpp -o CMakeFiles/demo.dir/3_queue/CycleQueue.cpp.s
+
+CMakeFiles/demo.dir/3_queue/LinkQueue.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/3_queue/LinkQueue.cpp.o: ../3_queue/LinkQueue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/localadmin/workspace/c++/demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/demo.dir/3_queue/LinkQueue.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/3_queue/LinkQueue.cpp.o -c /Users/localadmin/workspace/c++/demo/3_queue/LinkQueue.cpp
+
+CMakeFiles/demo.dir/3_queue/LinkQueue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/3_queue/LinkQueue.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/localadmin/workspace/c++/demo/3_queue/LinkQueue.cpp > CMakeFiles/demo.dir/3_queue/LinkQueue.cpp.i
+
+CMakeFiles/demo.dir/3_queue/LinkQueue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/3_queue/LinkQueue.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/localadmin/workspace/c++/demo/3_queue/LinkQueue.cpp -o CMakeFiles/demo.dir/3_queue/LinkQueue.cpp.s
+
 # Object files for target demo
 demo_OBJECTS = \
 "CMakeFiles/demo.dir/main.cpp.o" \
 "CMakeFiles/demo.dir/1_lineList/cycleDouble/CycleDoubleChainLine.cpp.o" \
-"CMakeFiles/demo.dir/1_lineList/cycleSingle/CycleSingleChainLine.cpp.o"
+"CMakeFiles/demo.dir/1_lineList/cycleSingle/CycleSingleChainLine.cpp.o" \
+"CMakeFiles/demo.dir/2_stack/SequentialStack.cpp.o" \
+"CMakeFiles/demo.dir/3_queue/CycleQueue.cpp.o" \
+"CMakeFiles/demo.dir/3_queue/LinkQueue.cpp.o"
 
 # External object files for target demo
 demo_EXTERNAL_OBJECTS =
@@ -108,9 +150,12 @@ demo_EXTERNAL_OBJECTS =
 demo: CMakeFiles/demo.dir/main.cpp.o
 demo: CMakeFiles/demo.dir/1_lineList/cycleDouble/CycleDoubleChainLine.cpp.o
 demo: CMakeFiles/demo.dir/1_lineList/cycleSingle/CycleSingleChainLine.cpp.o
+demo: CMakeFiles/demo.dir/2_stack/SequentialStack.cpp.o
+demo: CMakeFiles/demo.dir/3_queue/CycleQueue.cpp.o
+demo: CMakeFiles/demo.dir/3_queue/LinkQueue.cpp.o
 demo: CMakeFiles/demo.dir/build.make
 demo: CMakeFiles/demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/localadmin/workspace/c++/demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/localadmin/workspace/c++/demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

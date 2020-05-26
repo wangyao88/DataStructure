@@ -177,6 +177,87 @@ demo/fast:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/1_lineList/cycleSingle/CycleSingleChainLine.cpp.s
 .PHONY : 1_lineList/cycleSingle/CycleSingleChainLine.cpp.s
 
+2_stack/SequentialStack.o: 2_stack/SequentialStack.cpp.o
+
+.PHONY : 2_stack/SequentialStack.o
+
+# target to build an object file
+2_stack/SequentialStack.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/2_stack/SequentialStack.cpp.o
+.PHONY : 2_stack/SequentialStack.cpp.o
+
+2_stack/SequentialStack.i: 2_stack/SequentialStack.cpp.i
+
+.PHONY : 2_stack/SequentialStack.i
+
+# target to preprocess a source file
+2_stack/SequentialStack.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/2_stack/SequentialStack.cpp.i
+.PHONY : 2_stack/SequentialStack.cpp.i
+
+2_stack/SequentialStack.s: 2_stack/SequentialStack.cpp.s
+
+.PHONY : 2_stack/SequentialStack.s
+
+# target to generate assembly for a file
+2_stack/SequentialStack.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/2_stack/SequentialStack.cpp.s
+.PHONY : 2_stack/SequentialStack.cpp.s
+
+3_queue/CycleQueue.o: 3_queue/CycleQueue.cpp.o
+
+.PHONY : 3_queue/CycleQueue.o
+
+# target to build an object file
+3_queue/CycleQueue.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/3_queue/CycleQueue.cpp.o
+.PHONY : 3_queue/CycleQueue.cpp.o
+
+3_queue/CycleQueue.i: 3_queue/CycleQueue.cpp.i
+
+.PHONY : 3_queue/CycleQueue.i
+
+# target to preprocess a source file
+3_queue/CycleQueue.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/3_queue/CycleQueue.cpp.i
+.PHONY : 3_queue/CycleQueue.cpp.i
+
+3_queue/CycleQueue.s: 3_queue/CycleQueue.cpp.s
+
+.PHONY : 3_queue/CycleQueue.s
+
+# target to generate assembly for a file
+3_queue/CycleQueue.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/3_queue/CycleQueue.cpp.s
+.PHONY : 3_queue/CycleQueue.cpp.s
+
+3_queue/LinkQueue.o: 3_queue/LinkQueue.cpp.o
+
+.PHONY : 3_queue/LinkQueue.o
+
+# target to build an object file
+3_queue/LinkQueue.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/3_queue/LinkQueue.cpp.o
+.PHONY : 3_queue/LinkQueue.cpp.o
+
+3_queue/LinkQueue.i: 3_queue/LinkQueue.cpp.i
+
+.PHONY : 3_queue/LinkQueue.i
+
+# target to preprocess a source file
+3_queue/LinkQueue.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/3_queue/LinkQueue.cpp.i
+.PHONY : 3_queue/LinkQueue.cpp.i
+
+3_queue/LinkQueue.s: 3_queue/LinkQueue.cpp.s
+
+.PHONY : 3_queue/LinkQueue.s
+
+# target to generate assembly for a file
+3_queue/LinkQueue.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/3_queue/LinkQueue.cpp.s
+.PHONY : 3_queue/LinkQueue.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -219,6 +300,15 @@ help:
 	@echo "... 1_lineList/cycleSingle/CycleSingleChainLine.o"
 	@echo "... 1_lineList/cycleSingle/CycleSingleChainLine.i"
 	@echo "... 1_lineList/cycleSingle/CycleSingleChainLine.s"
+	@echo "... 2_stack/SequentialStack.o"
+	@echo "... 2_stack/SequentialStack.i"
+	@echo "... 2_stack/SequentialStack.s"
+	@echo "... 3_queue/CycleQueue.o"
+	@echo "... 3_queue/CycleQueue.i"
+	@echo "... 3_queue/CycleQueue.s"
+	@echo "... 3_queue/LinkQueue.o"
+	@echo "... 3_queue/LinkQueue.i"
+	@echo "... 3_queue/LinkQueue.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

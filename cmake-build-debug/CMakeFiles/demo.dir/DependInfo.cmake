@@ -6,6 +6,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/localadmin/workspace/c++/demo/1_lineList/cycleDouble/CycleDoubleChainLine.cpp" "/Users/localadmin/workspace/c++/demo/cmake-build-debug/CMakeFiles/demo.dir/1_lineList/cycleDouble/CycleDoubleChainLine.cpp.o"
   "/Users/localadmin/workspace/c++/demo/1_lineList/cycleSingle/CycleSingleChainLine.cpp" "/Users/localadmin/workspace/c++/demo/cmake-build-debug/CMakeFiles/demo.dir/1_lineList/cycleSingle/CycleSingleChainLine.cpp.o"
+  "/Users/localadmin/workspace/c++/demo/2_stack/SequentialStack.cpp" "/Users/localadmin/workspace/c++/demo/cmake-build-debug/CMakeFiles/demo.dir/2_stack/SequentialStack.cpp.o"
+  "/Users/localadmin/workspace/c++/demo/3_queue/CycleQueue.cpp" "/Users/localadmin/workspace/c++/demo/cmake-build-debug/CMakeFiles/demo.dir/3_queue/CycleQueue.cpp.o"
+  "/Users/localadmin/workspace/c++/demo/3_queue/LinkQueue.cpp" "/Users/localadmin/workspace/c++/demo/cmake-build-debug/CMakeFiles/demo.dir/3_queue/LinkQueue.cpp.o"
   "/Users/localadmin/workspace/c++/demo/main.cpp" "/Users/localadmin/workspace/c++/demo/cmake-build-debug/CMakeFiles/demo.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

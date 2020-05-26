@@ -7,7 +7,7 @@ int main() {
     LinkList list;
     tailInsert(list);
     print(list);
-    deleteNodeWithSameAbsData(list, 100);
+    evenReverseOrder(list);
     print(list);
     return 0;
 }

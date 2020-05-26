@@ -729,14 +729,14 @@ bool searchK(LinkList &list, int k) {
     LNode *p = list->next, *q = list->next;
     int count = 0;
     while (p != nullptr) {
-        if(count < k) {
+        if (count < k) {
             count++;
         } else {
             q = q->next;
         }
         p = p->next;
     }
-    if(count < k) {
+    if (count < k) {
         return false;
     }
     printf("%d", q->data);
@@ -761,10 +761,10 @@ LNode *findCommonNode(LinkList &left, LinkList &right) {
     LNode *p, *q;
     int m = length(left);
     int n = length(right);
-    for(p = left; m > n; m--) {
+    for (p = left; m > n; m--) {
         p = p->next;
     }
-    for(q = right; m < n; n--) {
+    for (q = right; m < n; n--) {
         q = q->next;
     }
     while (p->next != nullptr && p->next->data != q->next->data) {
@@ -788,13 +788,13 @@ LNode *findCommonNode(LinkList &left, LinkList &right) {
  * @param list
  */
 LinkList deleteNodeWithSameAbsData(LinkList &list, int max) {
-    int num[max+1];
+    int num[max + 1];
     for (int i = 0; i <= max; i++) {
         num[i] = 0;
     }
     LNode *p = list->next, *pre = list, *temp;
     while (p != nullptr) {
-        if(num[abs(p->data)] == 0) {
+        if (num[abs(p->data)] == 0) {
             num[abs(p->data)] = 1;
             p = p->next;
             pre = pre->next;
@@ -806,6 +806,90 @@ LinkList deleteNodeWithSameAbsData(LinkList &list, int max) {
         }
     }
     return list;
+}
+
+/**
+ * 问题描述
+ *    依次取尾部元素间隔插到单链表中（单链表重排）
+ *
+ * 算法实现
+ *    先找到链表的中间节点，为此设置两个指针*p，*q，p每次走一步，q每次走两步，q到达尾部时，p正好到达中间节点。
+ *    将L的后半段节点原地逆置
+ *    从单链表前后两段中依次各取一个节点，按要求重排
+ *
+ * 算法总结
+ *    时间复杂度为O(n)，空间复杂的为O(1)
+ *
+ * @param list
+ * @return
+ */
+LinkList evenReverseOrder(LinkList &list) {
+    LNode *p, *q, *r, *s;
+    p = q = list;
+    //寻找中间节点
+    while (q->next != nullptr) {
+        p = p->next;
+        q = q->next;
+        if (q->next != nullptr) {
+            q = q->next;
+        }
+    }
+    //p指向中间节点，q指向后半段链表的首节点
+    q = p->next;
+    p->next = nullptr;
+    //将链表后半段逆置
+    while (q != nullptr) {
+        r = q->next;
+        q->next = p->next;
+        p->next = q;
+        q = r;
+    }
+    //s指向前半段的第一个节点，即插入点
+    s = list->next;
+    //q指向后半段的第一个节点
+    q = p->next;
+    p->next = nullptr;
+    //将链表后半段节点依次插入指定位置
+    while (q != nullptr) {
+        r = q->next;
+        q->next = s->next;
+        s->next = q;
+        s = q->next;
+        q = r;
+    }
+    return list;
+}
+
+/**
+ * 判断一个链表是否有环， 有环返回入口，无环返回Null
+ * @param list
+ * @return
+ */
+LNode *hasCycle(LinkList &list) {
+    //设置快慢两个指针
+    LNode *fast = list, *slow = list;
+    while (slow != nullptr && fast->next != nullptr) {
+        //每次走一步
+        slow = slow->next;
+        //每次走两步
+        fast = fast->next->next;
+        //相遇
+        if(slow == fast) {
+            break;
+        }
+    }
+    if(slow == nullptr || fast->next == nullptr) {
+        //没有环
+        return nullptr;
+    }
+    //分别指向开始节点、相遇节点
+    LNode *start = list, *meet = slow;
+    while (start != meet) {
+        start = start->next;
+        meet = meet->next;
+    }
+    //返回入口
+    return start;
 }
 
 #endif //DEMO_SINGLECHAINLINE_H

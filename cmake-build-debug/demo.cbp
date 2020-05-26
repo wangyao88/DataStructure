@@ -100,6 +100,24 @@
 		<Unit filename="/Users/localadmin/workspace/c++/demo/1_lineList/singleChainLine.h">
 			<Option target="demo"/>
 		</Unit>
+		<Unit filename="/Users/localadmin/workspace/c++/demo/2_stack/SequentialStack.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/Users/localadmin/workspace/c++/demo/2_stack/SequentialStack.h">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/Users/localadmin/workspace/c++/demo/3_queue/CycleQueue.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/Users/localadmin/workspace/c++/demo/3_queue/CycleQueue.h">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/Users/localadmin/workspace/c++/demo/3_queue/LinkQueue.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/Users/localadmin/workspace/c++/demo/3_queue/LinkQueue.h">
+			<Option target="demo"/>
+		</Unit>
 		<Unit filename="/Users/localadmin/workspace/c++/demo/main.cpp">
 			<Option target="demo"/>
 		</Unit>
